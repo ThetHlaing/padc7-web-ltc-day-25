@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Fruits</h1>
+        <% data.forEach( element => { %>
+            <p><%= element.name %> : <%= element.stock %></p>
+        <% }) %>
+    <form method="POST" action="/fruits">
+        Fruit Name : <input name="fruit"/><br/>
+        Stock : <input type="tel" name="stock"/><br/>
+        <button>Save</button>
+    </form>
+    </body>
+</html>
